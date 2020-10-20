@@ -13,6 +13,12 @@
 		2CC66872253F80C500CACFA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC66871253F80C500CACFA7 /* Preview Assets.xcassets */; };
 		2CC6687D253F80C500CACFA7 /* CoffeeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC6687C253F80C500CACFA7 /* CoffeeAppTests.swift */; };
 		2CC66888253F80C500CACFA7 /* CoffeeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66887253F80C500CACFA7 /* CoffeeAppUITests.swift */; };
+		2CC66899253F813200CACFA7 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC66898253F813200CACFA7 /* Preferences.swift */; };
+		2CC6689E253F814800CACFA7 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC6689D253F814800CACFA7 /* MainMenu.swift */; };
+		2CC668A3253F816100CACFA7 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668A2253F816100CACFA7 /* AboutUs.swift */; };
+		2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668A7253F817F00CACFA7 /* LoginPage.swift */; };
+		2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668AC253F819A00CACFA7 /* SplashScreen.swift */; };
+		2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		2CC66883253F80C500CACFA7 /* CoffeeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC66887253F80C500CACFA7 /* CoffeeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAppUITests.swift; sourceTree = "<group>"; };
 		2CC66889253F80C500CACFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC66898253F813200CACFA7 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		2CC6689D253F814800CACFA7 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		2CC668A2253F816100CACFA7 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		2CC668A7253F817F00CACFA7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,12 @@
 			children = (
 				2CC6686A253F80BF00CACFA7 /* CoffeeAppApp.swift */,
 				2CC6686C253F80BF00CACFA7 /* ContentView.swift */,
+				2CC66898253F813200CACFA7 /* Preferences.swift */,
+				2CC6689D253F814800CACFA7 /* MainMenu.swift */,
+				2CC668A2253F816100CACFA7 /* AboutUs.swift */,
+				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
+				2CC668AC253F819A00CACFA7 /* SplashScreen.swift */,
+				2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */,
 				2CC6686E253F80C500CACFA7 /* Assets.xcassets */,
 				2CC66873253F80C500CACFA7 /* Info.plist */,
 				2CC66870253F80C500CACFA7 /* Preview Content */,
@@ -261,6 +279,12 @@
 			files = (
 				2CC6686D253F80BF00CACFA7 /* ContentView.swift in Sources */,
 				2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */,
+				2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */,
+				2CC668A3253F816100CACFA7 /* AboutUs.swift in Sources */,
+				2CC66899253F813200CACFA7 /* Preferences.swift in Sources */,
+				2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */,
+				2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */,
+				2CC6689E253F814800CACFA7 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
