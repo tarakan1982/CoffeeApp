@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Preferences: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Тут вместо текста надо вставить код, который сейчас в файле MainMenu")
     }
 }
 

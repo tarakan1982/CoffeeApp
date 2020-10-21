@@ -9,9 +9,44 @@ import SwiftUI
 
 struct MainMenu: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView() {
+            List(coffeeData) { menuCoffee in
+                ScrollView() {
+                    NavigationLink(destination: Text(menuCoffee.nameCoffee)) {
+                        HStack {
+                            Image(menuCoffee.image)
+                                .frame(width: 70, height: 104, alignment: .leading)
+                            Text(menuCoffee.nameCoffee)
+                                .foregroundColor(Color("menufont"))
+                                .font(.system(size: 20))
+                            Spacer()
+                            Text(">")
+                                .foregroundColor(Color("menufont"))
+                                .font(.system(size: 20))
+                        }
+                        .padding(.horizontal)
+                    }
+                }
+            }
+                .navigationBarTitle("Меню") //тоже как изменить размер и цвет остается для меня загадкой
+        }
     }
 }
+
+struct MenuCoffee: Identifiable {
+    var id = UUID()
+    var image: String
+    var nameCoffee: String
+}
+
+let coffeeData: [MenuCoffee] = [
+MenuCoffee(image: "espresso", nameCoffee: "Espresso"),
+    MenuCoffee(image: "cappuccino", nameCoffee: "Cappuccino"),
+    MenuCoffee(image: "macciato", nameCoffee: "Macciato"),
+    MenuCoffee(image: "mocha", nameCoffee: "Mocha"),
+    MenuCoffee(image: "latte", nameCoffee: "Latte")
+]
+
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
