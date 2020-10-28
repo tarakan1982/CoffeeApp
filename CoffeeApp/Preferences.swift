@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Preferences: View {
     var objectCoffee: MenuCoffee
-    @State var numberOfCoffee = 0
+    @State var numberOfCoffee = 1
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
