@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Preferences: View {
     var objectCoffee: MenuCoffee
-    
+    @State var numberOfCoffee = 0
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
@@ -21,9 +21,20 @@ struct Preferences: View {
                 .frame(width: 100, height: 100, alignment: .center)
             }
             VStack {
-                Text(objectCoffee.nameCoffee)
-                    .bold()
-                    .font(.system(size: 32))
+                HStack {
+                    Text(objectCoffee.nameCoffee)
+                        .bold()
+                    Spacer()
+                Text("\(numberOfCoffee) шт.")
+                }
+                        .font(.system(size: 32))
+                HStack {
+                                        Stepper("Количество", value: $numberOfCoffee, in: 0...100)
+                
+                }
+                Rectangle()
+                    .foregroundColor(Color("fontcolor"))
+                    .frame(width: .infinity, height: 2, alignment: .center)
                 HStack(alignment: .bottom) {
                     Text("Размер: ")
                     Spacer()
