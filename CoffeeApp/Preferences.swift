@@ -29,9 +29,10 @@ struct Preferences: View {
                 }
                         .font(.system(size: 32))
                 HStack {
-                                        Stepper("Количество", value: $numberOfCoffee, in: 0...100)
+                    Stepper("Количество", value: $numberOfCoffee, in: 0...100)
                 
                 }
+                .frame(height: 50)
                 Rectangle()
                     .foregroundColor(Color("fontcolor"))
                     .frame(width: .infinity, height: 2, alignment: .center)
@@ -42,6 +43,7 @@ struct Preferences: View {
                     Image("size02")
                     Image("size03")
                 }
+                .frame(height: 50)
                 Rectangle()
                     .foregroundColor(Color("fontcolor"))
                     .frame(width: .infinity, height: 2, alignment: .center)
@@ -53,6 +55,7 @@ struct Preferences: View {
                     Image("sugar03")
                     Image("sugar04")
                 }
+                .frame(height: 50)
                 Rectangle()
                     .foregroundColor(Color("fontcolor"))
                     .frame(width: .infinity, height: 2, alignment: .center)
@@ -62,6 +65,7 @@ struct Preferences: View {
                     Image("addit01")
                     Image("addit02")
                 }
+                .frame(height: 50)
                 Rectangle()
                     .foregroundColor(Color("fontcolor"))
                     .frame(width: .infinity, height: 2, alignment: .center)
@@ -94,7 +98,7 @@ struct Preferences: View {
             Spacer()
                             
         }
-        .edgesIgnoringSafeArea(.all)
+//        .edgesIgnoringSafeArea(.all)
 
     }
 }

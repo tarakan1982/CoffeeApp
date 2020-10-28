@@ -29,7 +29,7 @@ struct MainMenu: View {
                     }
                 }
             }
-                .navigationBarTitle("Меню") //тоже как изменить размер и цвет остается для меня загадкой
+            .navigationBarTitle("Меню", displayMode: .inline) //тоже как изменить размер и цвет остается для меня загадкой
         }
     }
 }
