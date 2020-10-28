@@ -12,7 +12,8 @@ struct MainMenu: View {
         NavigationView() {
             List(coffeeData) { menuCoffee in
                 ScrollView() {
-                    NavigationLink(destination: Text(menuCoffee.nameCoffee)) {
+                    //NavigationLink(destination: Text(menuCoffee.nameCoffee)) этот навигейшн работает,  передает название напитка на следующий вью
+                    NavigationLink(destination: Preferences(objectCoffee: menuCoffee)) {
                         HStack {
                             Image(menuCoffee.image)
                                 .frame(width: 70, height: 104, alignment: .leading)
