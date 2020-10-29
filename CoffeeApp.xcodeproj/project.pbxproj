@@ -19,6 +19,7 @@
 		2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668A7253F817F00CACFA7 /* LoginPage.swift */; };
 		2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668AC253F819A00CACFA7 /* SplashScreen.swift */; };
 		2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */; };
+		68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CAD254ACF9300379D99 /* TabViewBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2CC668A7253F817F00CACFA7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		68036CAD254ACF9300379D99 /* TabViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2CC668A2253F816100CACFA7 /* AboutUs.swift */,
 				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
 				2CC668AC253F819A00CACFA7 /* SplashScreen.swift */,
+				68036CAD254ACF9300379D99 /* TabViewBottom.swift */,
 				2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */,
 				2CC6686E253F80C500CACFA7 /* Assets.xcassets */,
 				2CC66873253F80C500CACFA7 /* Info.plist */,
@@ -284,6 +287,7 @@
 				2CC66899253F813200CACFA7 /* Preferences.swift in Sources */,
 				2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */,
 				2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */,
+				68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */,
 				2CC6689E253F814800CACFA7 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
