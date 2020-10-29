@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Preferences: View {
     var objectCoffee: MenuCoffee
+    
+    
+    
     @State var numberOfCoffee = 1
+    @State var sizeCoffee = 0
+    @State var sugarCount = 0
+    @State var addit = 0
+    
+    
+    
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
@@ -22,7 +31,7 @@ struct Preferences: View {
             }
             VStack {
                 HStack {
-                    Text(objectCoffee.nameCoffee)
+                    Text("\(objectCoffee.nameCoffee ) \(objectCoffee.price)р.")
                         .bold()
                     Spacer()
                 Text("\(numberOfCoffee) шт.")
@@ -39,9 +48,25 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Размер: ")
                     Spacer()
-                    Image("size01")
-                    Image("size02")
-                    Image("size03")
+                    
+                    
+                    // теперь это кнопки
+                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {
+                        Image("size01")
+                    })
+                    
+                    
+                    
+                    
+                    Button(action: {self.sizeCoffee = objectCoffee.price + 10}, label: {
+                        Image("size02")
+                    })
+                    
+                    
+                    
+                    Button(action: {self.sizeCoffee = objectCoffee.price + 20}, label: {
+                        Image("size03")
+                    })
                 }
                 .frame(height: 50)
                 Rectangle()
@@ -50,10 +75,29 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Сахар: ")
                     Spacer()
-                    Image("sugar01")
-                    Image("sugar02")
-                    Image("sugar03")
-                    Image("sugar04")
+                    
+                    
+                    
+                    
+                    // теперь это кнопки
+                    Button(action: {self.sugarCount = 0}, label: {
+                        Image("sugar01")
+                    })
+                    
+                    Button(action: {self.sugarCount = 10 }, label: {
+                        Image("sugar02")
+                    })
+                    
+                    Button(action: {self.sugarCount = 20 }, label: {
+                        Image("sugar03")
+                    })
+                    
+                    
+                    Button(action: {self.sugarCount = 30}, label: {
+                        Image("sugar04")
+                    })
+                    
+                    
                 }
                 .frame(height: 50)
                 Rectangle()
@@ -62,8 +106,22 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Сливки: ")
                     Spacer()
-                    Image("addit01")
-                    Image("addit02")
+                    
+                    
+                    // теперь это кнопки
+                    Button(action: {self.addit = 0}, label: {
+                        Image("addit01")
+                    })
+                    
+                    
+                    
+                    
+                    Button(action: {self.addit = 20}, label: {
+                        Image("addit02")
+                    })
+                    
+                    
+                    
                 }
                 .frame(height: 50)
                 Rectangle()
@@ -73,7 +131,7 @@ struct Preferences: View {
                     Text("Итого: ")
                         .font(.system(size: 32)).bold().italic()
                     Spacer()
-                    Text("420 руб").font(.system(size: 32)).bold().italic()
+                    Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)").font(.system(size: 32)).bold().italic()
                 }
                 
                 
@@ -98,7 +156,7 @@ struct Preferences: View {
             Spacer()
                             
         }
-//        .edgesIgnoringSafeArea(.all)
+
 
     }
 }
