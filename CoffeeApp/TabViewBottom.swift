@@ -21,7 +21,7 @@ struct TabViewBottom: View {
                 Image(systemName: "cart")
                     Text("Корзина")
                 }.tag(2)
-            Text("Третья страница")
+            MapViewPage()
                 .tabItem {
                 Image(systemName: "map")
                     Text("Карта")
