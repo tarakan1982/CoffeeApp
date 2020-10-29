@@ -20,6 +20,7 @@
 		2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668AC253F819A00CACFA7 /* SplashScreen.swift */; };
 		2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */; };
 		68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CAD254ACF9300379D99 /* TabViewBottom.swift */; };
+		68036CB3254AE5FA00379D99 /* MapViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CB2254AE5FA00379D99 /* MapViewPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		68036CAD254ACF9300379D99 /* TabViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottom.swift; sourceTree = "<group>"; };
+		68036CB2254AE5FA00379D99 /* MapViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2CC66898253F813200CACFA7 /* Preferences.swift */,
 				2CC6689D253F814800CACFA7 /* MainMenu.swift */,
 				2CC668A2253F816100CACFA7 /* AboutUs.swift */,
+				68036CB2254AE5FA00379D99 /* MapViewPage.swift */,
 				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
 				2CC668AC253F819A00CACFA7 /* SplashScreen.swift */,
 				68036CAD254ACF9300379D99 /* TabViewBottom.swift */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68036CB3254AE5FA00379D99 /* MapViewPage.swift in Sources */,
 				2CC6686D253F80BF00CACFA7 /* ContentView.swift in Sources */,
 				2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */,
 				2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */,

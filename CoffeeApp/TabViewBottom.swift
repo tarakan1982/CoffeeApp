@@ -8,38 +8,35 @@
 import SwiftUI
 
 struct TabViewBottom: View {
+    @State private var selectedView = 1
     var body: some View {
-        TabView() {
-            Text("Первая страница").tabItem {
-                VStack {
+        TabView(selection: $selectedView) {
+            MainMenu()
+            .tabItem {
                 Image(systemName: "house")
                     Text("Главная")
-                }
                 }.tag(1)
-            Text("Вторая страница").tabItem {
-                VStack {
+            Text("Вторая страница")
+                .tabItem {
+                Image(systemName: "cart")
+                    Text("Корзина")
+                }.tag(2)
+            Text("Третья страница")
+                .tabItem {
                 Image(systemName: "map")
                     Text("Карта")
-                }
-                }.tag(2)
-            Text("Третья страница").tabItem {
-                VStack {
-                Image(systemName: "tornado")
-                    Text("Кофе")
-                }
                 }.tag(3)
-            Text("Четвертая страница").tabItem {
-                VStack {
+            Text("Четвертая страница")
+                .tabItem {
                 Image(systemName: "person")
                     Text("Мои данные")
-                }
                 }.tag(4)
-
-
         }
-        .ignoresSafeArea()
     }
 }
+
+
+
 
 struct TabViewBottom_Previews: PreviewProvider {
     static var previews: some View {
