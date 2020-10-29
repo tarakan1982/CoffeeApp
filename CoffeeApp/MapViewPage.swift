@@ -20,8 +20,8 @@ struct MapViewPage: View {
     
     struct MapViewWithAnnotations: View {
         let veganPlacesInRiga = [
-          VeganFoodPlace(name: "Кофейня №1", latitude: 55.707030, longitude: 37.592209),
-//          VeganFoodPlace(name: "ИП Вазген", latitude:  56.967520, longitude: 24.105760) путем добавления в массив еще точек, добавляются поинтеры, но блин по какой то причине они не отображаются
+          VeganFoodPlace(name: "ИП Вазген", latitude: 55.707030, longitude: 37.592209),
+//          VeganFoodPlace(name: "Кофейня №1", latitude:  56.967520, longitude: 24.105760) путем добавления в массив еще точек, добавляются поинтеры, но блин по какой то причине они не отображаются
         ]
         
         @State var coordinateRegion = MKCoordinateRegion(
