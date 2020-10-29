@@ -9,9 +9,7 @@ import SwiftUI
 
 struct Preferences: View {
     var objectCoffee: MenuCoffee
-    
-    
-    
+
     @State var numberOfCoffee = 1
     @State var sizeCoffee = 0
     @State var sugarCount = 0
