@@ -31,7 +31,7 @@ struct Preferences: View {
             }
             VStack {
                 HStack {
-                    Text("\(objectCoffee.nameCoffee ) \(objectCoffee.price)р.хуйпизда")
+                    Text("\(objectCoffee.nameCoffee ) \(objectCoffee.price)р.джигурда")
                         .bold()
                     Spacer()
                 Text("\(numberOfCoffee) шт.")
