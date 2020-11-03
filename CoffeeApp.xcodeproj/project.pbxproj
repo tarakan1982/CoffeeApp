@@ -21,6 +21,8 @@
 		2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668AC253F819A00CACFA7 /* SplashScreen.swift */; };
 		2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */; };
 		68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CAD254ACF9300379D99 /* TabViewBottom.swift */; };
+		682612942551580000E98B1F /* MyDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612932551580000E98B1F /* MyDataPage.swift */; };
+		682612992551626500E98B1F /* OrdersCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612982551626500E98B1F /* OrdersCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		68036CAD254ACF9300379D99 /* TabViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottom.swift; sourceTree = "<group>"; };
+		682612932551580000E98B1F /* MyDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataPage.swift; sourceTree = "<group>"; };
+		682612982551626500E98B1F /* OrdersCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 				2CACCFBB254B74E100754356 /* MapViewPage.swift */,
 				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
 				2CC668AC253F819A00CACFA7 /* SplashScreen.swift */,
+				682612932551580000E98B1F /* MyDataPage.swift */,
 				68036CAD254ACF9300379D99 /* TabViewBottom.swift */,
+				682612982551626500E98B1F /* OrdersCart.swift */,
 				2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */,
 				2CC6686E253F80C500CACFA7 /* Assets.xcassets */,
 				2CC66873253F80C500CACFA7 /* Info.plist */,
@@ -283,12 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682612992551626500E98B1F /* OrdersCart.swift in Sources */,
 				2CACCFBC254B74E100754356 /* MapViewPage.swift in Sources */,
 				2CC6686D253F80BF00CACFA7 /* ContentView.swift in Sources */,
 				2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */,
 				2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */,
 				2CC668A3253F816100CACFA7 /* AboutUs.swift in Sources */,
 				2CC66899253F813200CACFA7 /* Preferences.swift in Sources */,
+				682612942551580000E98B1F /* MyDataPage.swift in Sources */,
 				2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */,
 				2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */,
 				68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */,
