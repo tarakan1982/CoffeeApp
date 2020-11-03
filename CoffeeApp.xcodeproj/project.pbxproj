@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186275D3FAFBEF1E700F7C09 /* Pods_CoffeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363F28DCB67BDC543BF7E2F3 /* Pods_CoffeeApp.framework */; };
 		2CACCFBC254B74E100754356 /* MapViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACCFBB254B74E100754356 /* MapViewPage.swift */; };
 		2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC6686A253F80BF00CACFA7 /* CoffeeAppApp.swift */; };
 		2CC6686D253F80BF00CACFA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC6686C253F80BF00CACFA7 /* ContentView.swift */; };
@@ -23,6 +24,7 @@
 		68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CAD254ACF9300379D99 /* TabViewBottom.swift */; };
 		682612942551580000E98B1F /* MyDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612932551580000E98B1F /* MyDataPage.swift */; };
 		682612992551626500E98B1F /* OrdersCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612982551626500E98B1F /* OrdersCart.swift */; };
+		6826129E255175AC00E98B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6826129D255175AC00E98B1F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +64,13 @@
 		2CC668A7253F817F00CACFA7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		363F28DCB67BDC543BF7E2F3 /* Pods_CoffeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68036CAD254ACF9300379D99 /* TabViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottom.swift; sourceTree = "<group>"; };
 		682612932551580000E98B1F /* MyDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataPage.swift; sourceTree = "<group>"; };
 		682612982551626500E98B1F /* OrdersCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCart.swift; sourceTree = "<group>"; };
+		6826129D255175AC00E98B1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../../Users/dmitrij/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B04F230217D1D37C30604100 /* Pods-CoffeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.release.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.release.xcconfig"; sourceTree = "<group>"; };
+		C997DC01486EFBCAE313D900 /* Pods-CoffeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186275D3FAFBEF1E700F7C09 /* Pods_CoffeeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012D3C771B16CE87FE5CE972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				363F28DCB67BDC543BF7E2F3 /* Pods_CoffeeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2CC6685E253F80BF00CACFA7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,8 @@
 				2CC6687B253F80C500CACFA7 /* CoffeeAppTests */,
 				2CC66886253F80C500CACFA7 /* CoffeeAppUITests */,
 				2CC66868253F80BF00CACFA7 /* Products */,
+				C4CB98FC8E9A054ADEF92974 /* Pods */,
+				012D3C771B16CE87FE5CE972 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +146,7 @@
 				2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */,
 				2CC6686E253F80C500CACFA7 /* Assets.xcassets */,
 				2CC66873253F80C500CACFA7 /* Info.plist */,
+				6826129D255175AC00E98B1F /* GoogleService-Info.plist */,
 				2CC66870253F80C500CACFA7 /* Preview Content */,
 			);
 			path = CoffeeApp;
@@ -160,6 +178,16 @@
 			path = CoffeeAppUITests;
 			sourceTree = "<group>";
 		};
+		C4CB98FC8E9A054ADEF92974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C997DC01486EFBCAE313D900 /* Pods-CoffeeApp.debug.xcconfig */,
+				B04F230217D1D37C30604100 /* Pods-CoffeeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC6688C253F80C500CACFA7 /* Build configuration list for PBXNativeTarget "CoffeeApp" */;
 			buildPhases = (
+				99B85DC1FA053EF62065A946 /* [CP] Check Pods Manifest.lock */,
 				2CC66863253F80BF00CACFA7 /* Sources */,
 				2CC66864253F80BF00CACFA7 /* Frameworks */,
 				2CC66865253F80BF00CACFA7 /* Resources */,
+				258A664A9B2CEBD6DBBE0CBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +295,7 @@
 			files = (
 				2CC66872253F80C500CACFA7 /* Preview Assets.xcassets in Resources */,
 				2CC6686F253F80C500CACFA7 /* Assets.xcassets in Resources */,
+				6826129E255175AC00E98B1F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +314,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258A664A9B2CEBD6DBBE0CBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B85DC1FA053EF62065A946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CC66863253F80BF00CACFA7 /* Sources */ = {
@@ -454,6 +527,7 @@
 		};
 		2CC6688D253F80C500CACFA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C997DC01486EFBCAE313D900 /* Pods-CoffeeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +550,7 @@
 		};
 		2CC6688E253F80C500CACFA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04F230217D1D37C30604100 /* Pods-CoffeeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

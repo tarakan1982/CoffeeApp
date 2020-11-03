@@ -13,9 +13,10 @@ struct MyDataPage: View {
     var body: some View {
         NavigationView {
             VStack {
-            HStack(alignment: .top) {
+                HStack(alignment: .top, spacing: 14) {
                 Image("avatar")
                     .resizable().frame(width: 200, height: 200, alignment: .leading)
+                    .cornerRadius(20)
                 VStack(alignment: .leading) {
                     Text("Имя: ")
                     TextField("Ваше имя", text: $myName)
