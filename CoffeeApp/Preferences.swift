@@ -18,7 +18,7 @@ struct Preferences: View {
     
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             ZStack {
             Image("header")
                 .resizable()
@@ -40,9 +40,11 @@ struct Preferences: View {
                 
                 }
                 .frame(height: 50)
-                Rectangle()
-                    .foregroundColor(Color("fontcolor"))
-                    .frame(width: .infinity, height: 2, alignment: .center)
+//                Rectangle()
+//                    .foregroundColor(Color("fontcolor"))
+//                    .frame(width: .infinity, height: 2, alignment: .center)
+                Divider()
+                    .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Размер: ")
                     Spacer()
@@ -67,9 +69,11 @@ struct Preferences: View {
                     })
                 }
                 .frame(height: 50)
-                Rectangle()
-                    .foregroundColor(Color("fontcolor"))
-                    .frame(width: .infinity, height: 2, alignment: .center)
+//                Rectangle()
+//                    .foregroundColor(Color("fontcolor"))
+//                    .frame(width: .infinity, height: 2, alignment: .center)
+                Divider()
+                    .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Сахар: ")
                     Spacer()
@@ -98,9 +102,11 @@ struct Preferences: View {
                     
                 }
                 .frame(height: 50)
-                Rectangle()
-                    .foregroundColor(Color("fontcolor"))
-                    .frame(width: .infinity, height: 2, alignment: .center)
+//                Rectangle()
+//                    .foregroundColor(Color("fontcolor"))
+//                    .frame(width: .infinity, height: 2, alignment: .center)
+                Divider()
+                    .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Сливки: ")
                     Spacer()
@@ -122,9 +128,11 @@ struct Preferences: View {
                     
                 }
                 .frame(height: 50)
-                Rectangle()
-                    .foregroundColor(Color("fontcolor"))
-                    .frame(width: .infinity, height: 2, alignment: .center)
+//                Rectangle()
+//                    .foregroundColor(Color("fontcolor"))
+//                    .frame(width: .infinity, height: 2, alignment: .center)
+                Divider()
+                    .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Итого: ")
                         .font(.system(size: 32)).bold().italic()
@@ -142,15 +150,14 @@ struct Preferences: View {
                 
             }) {
                 Text("В корзину")
+                    .foregroundColor(.white)
+                    .frame(width: UIScreen.main.bounds.width - 80)
+                    .padding()
             }
             
-            .padding(15)
-            .padding(.horizontal, 134) //надо посмотреть как сделать так, чтобы кнопка ресайзилась от края до края. просто ставить тут большую цифру нет смысла, на мелких экранах вылезет за края. Заключать во фрейм с шириной инфинити не прокатило, жаль.
             .background(Color("buttoncolor"))
             .cornerRadius(30)
-            .padding(.horizontal)
-            .padding(.top, 30)
-            .foregroundColor(.white)
+            .padding(.top, 16)
             Spacer()
                             
         }

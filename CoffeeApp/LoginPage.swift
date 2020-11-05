@@ -227,6 +227,17 @@ struct RegistrationForm : View {
             }
             .background(Color("buttoncolor"))
             .cornerRadius(30)
+            HStack {
+                Spacer()
+                Button(action: {
+                    //сделать закрытие при нажатии на кнопку
+                    
+                }) {
+                Text("Выход")
+                }
+                .padding(.top, 16)
+                .padding(.trailing, 10)
+            }
         }.padding()
             .alert(isPresented: $alert) {
                 
