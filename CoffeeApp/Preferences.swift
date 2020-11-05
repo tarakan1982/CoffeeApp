@@ -20,6 +20,7 @@ struct Preferences: View {
     
     
     var body: some View {
+        VStack{
         VStack(alignment: .leading) {
             ZStack {
             Image("header")
@@ -131,7 +132,9 @@ struct Preferences: View {
                     Text("Итого: ")
                         .font(.system(size: 32)).bold().italic()
                     Spacer()
-                    Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)").font(.system(size: 32)).bold().italic()
+                    Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)")
+                        .font(.system(size: 32)).bold().italic()
+                        .animation(.easeInOut)
                 }
                 
                 
@@ -140,24 +143,26 @@ struct Preferences: View {
             .foregroundColor(Color("menufont"))
             .font(.system(size: 20))
                 .padding(.horizontal)
-            Button(action: {
-                
-            }) {
-                Text("В корзину")
-            }
             
-            .padding(15)
-            .padding(.horizontal, 134) //надо посмотреть как сделать так, чтобы кнопка ресайзилась от края до края. просто ставить тут большую цифру нет смысла, на мелких экранах вылезет за края. Заключать во фрейм с шириной инфинити не прокатило, жаль.
-            .background(Color("buttoncolor"))
-            .cornerRadius(30)
-            .padding(.horizontal)
-            .padding(.top, 30)
-            .foregroundColor(.white)
-            Spacer()
                             
         }
+        Button(action: {
+            
+        }) {
+            Text("В корзину")
+                .padding(15)
+                .padding(.horizontal, 134) //надо посмотреть как сделать так, чтобы кнопка ресайзилась от края до края. просто ставить тут большую цифру нет смысла, на мелких экранах вылезет за края. Заключать во фрейм с шириной инфинити не прокатило, жаль.
+                .background(Color("buttoncolor"))
+                .cornerRadius(30)
+                .padding(.horizontal)
+                .padding(.top, 30)
+                .foregroundColor(.white)
+        }
+        
+        
+        Spacer()
 
-
+        }
     }
 }
 struct ZakazCoffee: Identifiable {
