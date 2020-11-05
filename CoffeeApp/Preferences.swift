@@ -123,9 +123,6 @@ struct Preferences: View {
                     Button(action: {self.addit = 20}, label: {
                         Image("addit02")
                     })
-                    
-                    
-                    
                 }
                 .frame(height: 50)
 //                Rectangle()
