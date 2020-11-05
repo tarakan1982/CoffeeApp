@@ -44,6 +44,7 @@ struct Preferences: View {
 //                    .foregroundColor(Color("fontcolor"))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
+                    .frame(height: 2)
                     .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Размер: ")
@@ -73,6 +74,7 @@ struct Preferences: View {
 //                    .foregroundColor(Color("fontcolor"))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
+                    .frame(height: 2)
                     .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Сахар: ")
@@ -106,6 +108,7 @@ struct Preferences: View {
 //                    .foregroundColor(Color("fontcolor"))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
+                    .frame(height: 2)
                     .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Сливки: ")
@@ -129,6 +132,7 @@ struct Preferences: View {
 //                    .foregroundColor(Color("fontcolor"))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
+                    .frame(height: 2)
                     .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Итого: ")

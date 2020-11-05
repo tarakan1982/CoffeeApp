@@ -79,12 +79,18 @@ struct DesignLoginWindow: View {
 //                    .foregroundColor(Color("fontcolor"))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
+                    .frame(height: 2)
+                    .background((Color("fontcolor")))
+
                 SecureField("Пароль", text: $passwordTextField)
                     .font(.system(size: 18, weight: .semibold))
 //                Rectangle()
 //                    .foregroundColor(Color(#colorLiteral(red: 0.2431372549, green: 0.2901960784, blue: 0.3490196078, alpha: 1)).opacity(0.45))
 //                    .frame(width: .infinity, height: 2, alignment: .center)
                     Divider()
+                        .frame(height: 2)
+                        .background((Color("fontcolor")))
+
                     .padding(.bottom, 14)
                 Button(action: {
                     
@@ -183,6 +189,9 @@ struct RegistrationForm : View {
                     }
                     
                     Divider()
+                        .frame(height: 2)
+                        .background((Color("fontcolor")))
+
                     
                 }.padding(.bottom, 15)
                 
@@ -193,6 +202,9 @@ struct RegistrationForm : View {
                     SecureField("Придумайте пароль", text: $passwordTextField)
                     
                     Divider()
+                        .frame(height: 2)
+                        .background((Color("fontcolor")))
+
                 }
                 
             }.padding(.horizontal, 6)
