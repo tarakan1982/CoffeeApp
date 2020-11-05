@@ -55,9 +55,10 @@ struct MyDataPage: View {
                 .foregroundColor(.white)
             
                     Button(action: {
-                        
+                        UserDefaults.standard.set(false, forKey: "status")
+                        NotificationCenter.default.post(name: NSNotification.Name("statusChange"), object: nil)
                     }) {
-                        Text("Отменить")
+                        Text("Выход")
                     }
                     
                     .padding(15)

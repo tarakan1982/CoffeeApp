@@ -16,7 +16,7 @@ struct CoffeeAppApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            TabViewBottom()
+            LoginPage()
         }
     }
 }
