@@ -40,9 +40,6 @@ struct Preferences: View {
                 
                 }
                 .frame(height: 50)
-//                Rectangle()
-//                    .foregroundColor(Color("fontcolor"))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
@@ -70,19 +67,13 @@ struct Preferences: View {
                     })
                 }
                 .frame(height: 50)
-//                Rectangle()
-//                    .foregroundColor(Color("fontcolor"))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
                 HStack(alignment: .bottom) {
                     Text("Сахар: ")
                     Spacer()
-                    
-                    
-                    
-                    
+               
                     // теперь это кнопки
                     Button(action: {self.sugarCount = 0}, label: {
                         Image("sugar01")
@@ -101,12 +92,8 @@ struct Preferences: View {
                         Image("sugar04")
                     })
                     
-                    
                 }
                 .frame(height: 50)
-//                Rectangle()
-//                    .foregroundColor(Color("fontcolor"))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
@@ -114,23 +101,16 @@ struct Preferences: View {
                     Text("Сливки: ")
                     Spacer()
                     
-                    
                     // теперь это кнопки
                     Button(action: {self.addit = 0}, label: {
                         Image("addit01")
                     })
-                    
-                    
-                    
                     
                     Button(action: {self.addit = 20}, label: {
                         Image("addit02")
                     })
                 }
                 .frame(height: 50)
-//                Rectangle()
-//                    .foregroundColor(Color("fontcolor"))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
@@ -140,7 +120,6 @@ struct Preferences: View {
                     Spacer()
                     Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)").font(.system(size: 32)).bold().italic()
                 }
-                
                 
             }
             
@@ -162,7 +141,6 @@ struct Preferences: View {
             Spacer()
                             
         }
-
 
     }
 }

@@ -14,9 +14,13 @@ struct MyDataPage: View {
         NavigationView {
             VStack {
                 HStack(alignment: .top, spacing: 14) {
+                    Button(action: {
+                       SelectAvatar()
+                    }) {
                 Image("avatar")
                     .resizable().frame(width: 200, height: 200, alignment: .leading)
                     .cornerRadius(20)
+                    }
                 VStack(alignment: .leading) {
                     Text("Имя: ")
                     TextField("Ваше имя", text: $myName)
@@ -77,6 +81,8 @@ struct MyDataPage: View {
         }
     }
 }
+
+
 
 struct MyDataPage_Previews: PreviewProvider {
     static var previews: some View {

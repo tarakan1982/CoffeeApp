@@ -75,18 +75,12 @@ struct DesignLoginWindow: View {
 //                if emailTextField != "" {
 //                    Image(systemName: "checkmark.circle")
 //                }
-//                Rectangle()
-//                    .foregroundColor(Color("fontcolor"))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
 
                 SecureField("Пароль", text: $passwordTextField)
                     .font(.system(size: 18, weight: .semibold))
-//                Rectangle()
-//                    .foregroundColor(Color(#colorLiteral(red: 0.2431372549, green: 0.2901960784, blue: 0.3490196078, alpha: 1)).opacity(0.45))
-//                    .frame(width: .infinity, height: 2, alignment: .center)
                     Divider()
                         .frame(height: 2)
                         .background((Color("fontcolor")))
@@ -243,7 +237,6 @@ struct RegistrationForm : View {
                 Spacer()
                 Button(action: {
                     //сделать закрытие при нажатии на кнопку
-                    
                 }) {
                 Text("Выход")
                 }
@@ -253,7 +246,7 @@ struct RegistrationForm : View {
         }.padding()
             .alert(isPresented: $alert) {
                 
-                Alert(title: Text("Error"), message: Text(self.message), dismissButton: .default(Text("Ok")))
+                Alert(title: Text("Ошибка"), message: Text(self.message), dismissButton: .default(Text("Ok")))
         }
     }
 }
