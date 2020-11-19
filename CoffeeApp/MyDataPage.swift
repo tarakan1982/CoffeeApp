@@ -10,6 +10,7 @@ import SwiftUI
 struct MyDataPage: View {
     @State var myName: String = ""
     @State var mySurname: String = ""
+    @State var myTelephone: String = ""
     var body: some View {
         NavigationView {
             VStack {
@@ -42,7 +43,21 @@ struct MyDataPage: View {
                 Spacer()
                 
             }
+                
             .padding(.horizontal)
+                VStack {
+                Text("Телефон")
+                    .foregroundColor(Color("menufont"))
+                    .font(.system(size: 24, weight: .semibold))
+                TextField("Телефон для связи", text: $myTelephone)
+                    .font(.system(size: 18, weight: .semibold))
+                    .keyboardType(.phonePad)
+                Divider()
+                .frame(height: 2)
+                .background((Color("fontcolor")))
+                }
+                .padding(.horizontal)
+                
                 Spacer()
 
                 HStack {
@@ -86,6 +101,8 @@ struct MyDataPage: View {
 
 struct MyDataPage_Previews: PreviewProvider {
     static var previews: some View {
+        Group {
             MyDataPage()
+        }
     }
 }
