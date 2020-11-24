@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct Preferences: View {
+    @State var sizeOfCoffeeDim = 0
+    var coffeeSizesDim = [
+        Image.sizeSmall,
+        Image.sizeMedium,
+        Image.sizeLarge
+    ]
     var objectCoffee: MenuCoffee
 @State var showAlertMessage = false
     @State var numberOfCoffee = 1
@@ -44,25 +50,34 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Размер: ")
                     Spacer()
+                    Picker(selection: $sizeOfCoffeeDim, label: Text("Выбор размера")) {
+                        //Когда делаю через ForEach, то перестают отображаться картинки, но через него делать более правильно, так как пунктов может быть довольно много и менять в разных местах это не с руки, как и прописывать
+                        ForEach(0 ..< self.coffeeSizesDim.count) {
+                            Text(self.coffeeSizesDim[$0]).tag($0)
+                        }
+//                        coffeeSizesDim[0].tag(0)
+//                        coffeeSizesDim[1].tag(1)
+//                        coffeeSizesDim[2].tag(2)
+                    }.pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 150)
                     
-                    
-                    // теперь это кнопки
-                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {
-                        Image("size01")
-                    })
-                    
-                    
-                    
-                    
-                    Button(action: {self.sizeCoffee = objectCoffee.price + 10}, label: {
-                        Image("size02")
-                    })
-                    
-                    
-                    
-                    Button(action: {self.sizeCoffee = objectCoffee.price + 20}, label: {
-                        Image("size03")
-                    })
+                    // На время теста кнопки решил заменить на Picker, может от этого нам станет лучше
+//                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {
+//                        Image("size01")
+//                    })
+//
+//
+//
+//
+//                    Button(action: {self.sizeCoffee = objectCoffee.price + 10}, label: {
+//                        Image("size02")
+//                    })
+//
+//
+//
+//                    Button(action: {self.sizeCoffee = objectCoffee.price + 20}, label: {
+//                        Image("size03")
+//                    })
                 }
                 .frame(height: 50)
                 Divider()
@@ -155,6 +170,19 @@ struct Preferences: View {
 //    var additionsCoffee: String
 //    var totalPrice: String
 //}
+
+extension Image {
+    static var sizeSmall: Image {
+        Image("size04")
+    }
+    static var sizeMedium: Image {
+        Image("size05")
+    }
+    static var sizeLarge: Image {
+        Image("size06")
+    }
+}
+
 
 struct Preferences_Previews: PreviewProvider {
     static var previews: some View {
