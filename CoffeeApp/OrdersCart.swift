@@ -13,7 +13,7 @@ struct OrdersCart: View {
             List() {
                 
             }
-            .navigationBarTitle("Корзина", displayMode: .inline)
+            .navigationBarTitle("Заказы", displayMode: .inline)
         }
     }
 }

@@ -26,6 +26,7 @@
 		6826129E255175AC00E98B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6826129D255175AC00E98B1F /* GoogleService-Info.plist */; };
 		6838CFDC255559560038C5EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CFDB255559560038C5EF /* Coordinator.swift */; };
 		6838CFE125555C7A0038C5EF /* SelectAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CFE025555C7A0038C5EF /* SelectAvatar.swift */; };
+		68E88281256D3E170008C105 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E88280256D3E170008C105 /* DeleteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		6826129D255175AC00E98B1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../../Users/dmitrij/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6838CFDB255559560038C5EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6838CFE025555C7A0038C5EF /* SelectAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvatar.swift; sourceTree = "<group>"; };
+		68E88280256D3E170008C105 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		B04F230217D1D37C30604100 /* Pods-CoffeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.release.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C997DC01486EFBCAE313D900 /* Pods-CoffeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				2CC6686A253F80BF00CACFA7 /* CoffeeAppApp.swift */,
 				2CC6686C253F80BF00CACFA7 /* ContentView.swift */,
 				2CC66898253F813200CACFA7 /* Preferences.swift */,
+				68E88280256D3E170008C105 /* DeleteView.swift */,
 				2CC6689D253F814800CACFA7 /* MainMenu.swift */,
 				2CACCFBB254B74E100754356 /* MapViewPage.swift */,
 				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
@@ -371,6 +374,7 @@
 				2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */,
 				2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */,
 				2CC66899253F813200CACFA7 /* Preferences.swift in Sources */,
+				68E88281256D3E170008C105 /* DeleteView.swift in Sources */,
 				682612942551580000E98B1F /* MyDataPage.swift in Sources */,
 				2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */,
 				2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */,

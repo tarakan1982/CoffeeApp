@@ -9,13 +9,11 @@ import SwiftUI
 
 struct Preferences: View {
     var objectCoffee: MenuCoffee
-
+@State var showAlertMessage = false
     @State var numberOfCoffee = 1
     @State var sizeCoffee = 0
     @State var sugarCount = 0
     @State var addit = 0
-    
-    
     
     var body: some View {
         VStack {
@@ -118,7 +116,8 @@ struct Preferences: View {
                     Text("Итого: ")
                         .font(.system(size: 32)).bold().italic()
                     Spacer()
-                    Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)").font(.system(size: 32)).bold().italic()
+                    Text("\((sizeCoffee + sugarCount + addit) * numberOfCoffee)")
+                        .font(.system(size: 32)).bold().italic()
                 }
                 
             }
@@ -127,31 +126,35 @@ struct Preferences: View {
             .font(.system(size: 20))
                 .padding(.horizontal)
             Button(action: {
-                
+                self.showAlertMessage.toggle()
             }) {
                 Text("В корзину")
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width - 80)
                     .padding()
             }
-            
             .background(Color("buttoncolor"))
             .cornerRadius(30)
             .padding(.top, 16)
+            .alert(isPresented: self.$showAlertMessage) {
+                Alert(title: Text("ТОВАРИЩ!"), message: Text("А теперь самое интересное: просьба закрыть окно, сделать скриншот и отправить на почту dhfkjsd@gmail.com. Не факт что и это дойдет, поэтому лучше звоните по телефону +77987239234, может ответим"), primaryButton: .default (Text("OK")),
+                      secondaryButton: .cancel())
+            }
             Spacer()
                             
         }
 
     }
 }
-struct ZakazCoffee: Identifiable {
-    var id = UUID()
-    var quantity: String
-    var sizeCoffee: String
-    var sugarCoffee: String
-    var additionsCoffee: String
-    var totalPrice: String
-}
+//Не пойму для чего нужна нижестоящая структура. Не буду удалять, может какую то она нагрузку несла, но судя по тому что я ее закоментил и все работает, я так понимаю что никакой нагрузки не было
+//struct ZakazCoffee: Identifiable {
+//    var id = UUID()
+//    var quantity: String
+//    var sizeCoffee: String
+//    var sugarCoffee: String
+//    var additionsCoffee: String
+//    var totalPrice: String
+//}
 
 struct Preferences_Previews: PreviewProvider {
     static var previews: some View {
