@@ -20,13 +20,12 @@
 		2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668A7253F817F00CACFA7 /* LoginPage.swift */; };
 		2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668AC253F819A00CACFA7 /* SplashScreen.swift */; };
 		2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */; };
+		2CE47CFD256D9CBE0041F69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE47CFC256D9CBE0041F69A /* GoogleService-Info.plist */; };
 		68036CAE254ACF9300379D99 /* TabViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68036CAD254ACF9300379D99 /* TabViewBottom.swift */; };
 		682612942551580000E98B1F /* MyDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612932551580000E98B1F /* MyDataPage.swift */; };
 		682612992551626500E98B1F /* OrdersCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682612982551626500E98B1F /* OrdersCart.swift */; };
-		6826129E255175AC00E98B1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6826129D255175AC00E98B1F /* GoogleService-Info.plist */; };
 		6838CFDC255559560038C5EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CFDB255559560038C5EF /* Coordinator.swift */; };
 		6838CFE125555C7A0038C5EF /* SelectAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CFE025555C7A0038C5EF /* SelectAvatar.swift */; };
-		68E88281256D3E170008C105 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E88280256D3E170008C105 /* DeleteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +64,13 @@
 		2CC668A7253F817F00CACFA7 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		2CC668AC253F819A00CACFA7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		2CE47CFC256D9CBE0041F69A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		363F28DCB67BDC543BF7E2F3 /* Pods_CoffeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68036CAD254ACF9300379D99 /* TabViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottom.swift; sourceTree = "<group>"; };
 		682612932551580000E98B1F /* MyDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataPage.swift; sourceTree = "<group>"; };
 		682612982551626500E98B1F /* OrdersCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCart.swift; sourceTree = "<group>"; };
-		6826129D255175AC00E98B1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../../Users/dmitrij/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6838CFDB255559560038C5EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6838CFE025555C7A0038C5EF /* SelectAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvatar.swift; sourceTree = "<group>"; };
-		68E88280256D3E170008C105 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
 		B04F230217D1D37C30604100 /* Pods-CoffeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.release.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C997DC01486EFBCAE313D900 /* Pods-CoffeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeApp.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeApp/Pods-CoffeeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +137,6 @@
 				2CC6686A253F80BF00CACFA7 /* CoffeeAppApp.swift */,
 				2CC6686C253F80BF00CACFA7 /* ContentView.swift */,
 				2CC66898253F813200CACFA7 /* Preferences.swift */,
-				68E88280256D3E170008C105 /* DeleteView.swift */,
 				2CC6689D253F814800CACFA7 /* MainMenu.swift */,
 				2CACCFBB254B74E100754356 /* MapViewPage.swift */,
 				2CC668A7253F817F00CACFA7 /* LoginPage.swift */,
@@ -150,9 +147,9 @@
 				68036CAD254ACF9300379D99 /* TabViewBottom.swift */,
 				682612982551626500E98B1F /* OrdersCart.swift */,
 				2CC668B1253F81BD00CACFA7 /* OnBoarding.swift */,
+				2CE47CFC256D9CBE0041F69A /* GoogleService-Info.plist */,
 				2CC6686E253F80C500CACFA7 /* Assets.xcassets */,
 				2CC66873253F80C500CACFA7 /* Info.plist */,
-				6826129D255175AC00E98B1F /* GoogleService-Info.plist */,
 				2CC66870253F80C500CACFA7 /* Preview Content */,
 			);
 			path = CoffeeApp;
@@ -300,7 +297,7 @@
 			files = (
 				2CC66872253F80C500CACFA7 /* Preview Assets.xcassets in Resources */,
 				2CC6686F253F80C500CACFA7 /* Assets.xcassets in Resources */,
-				6826129E255175AC00E98B1F /* GoogleService-Info.plist in Resources */,
+				2CE47CFD256D9CBE0041F69A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +371,6 @@
 				2CC6686B253F80BF00CACFA7 /* CoffeeAppApp.swift in Sources */,
 				2CC668AD253F819A00CACFA7 /* SplashScreen.swift in Sources */,
 				2CC66899253F813200CACFA7 /* Preferences.swift in Sources */,
-				68E88281256D3E170008C105 /* DeleteView.swift in Sources */,
 				682612942551580000E98B1F /* MyDataPage.swift in Sources */,
 				2CC668A8253F817F00CACFA7 /* LoginPage.swift in Sources */,
 				2CC668B2253F81BD00CACFA7 /* OnBoarding.swift in Sources */,
