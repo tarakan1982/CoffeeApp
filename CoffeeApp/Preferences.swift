@@ -11,6 +11,7 @@ struct Preferences: View {
     @State var sizeOfCoffeeDim = 0
     @State var countSugarDim = 3
     @State var countAdditDim = 7
+    
     //Создавался для Picker но потом я его слегка переделал и это вроде как больше не нужно
 //    var coffeeSizesDim = [
 //        Image("size04"),
@@ -67,7 +68,6 @@ struct Preferences: View {
                        
                     }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 150)
-                    
                     
                     // На время теста кнопки решил заменить на Picker, может от этого нам станет лучше
 //                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {

@@ -8,80 +8,92 @@
 import SwiftUI
 
 struct DeleteMe: View {
-
-    private var options = ["add", "edit", "delete"]
-    @State private var selectedOption = 0
-    @State private var choosed = 0
-
+    init() {
+        UITableView.appearance().separatorColor = .clear
+       }
+    var inputArray = ["100","201","302"]
+    @State var slectedSegmant = "ActionSheet"
+    @State var slectedObj = "100"
+    @State var enableSheet = false
+    var test = false
     var body: some View {
+        ZStack {
+            VStack(spacing: 10) {
+                Picker(selection: $slectedSegmant, label: Text("Segment")) {
+                    Text("Alert").tag("Alert")
+                    Text("ActionSheet").tag("ActionSheet")
+                }.pickerStyle(SegmentedPickerStyle())
+                    .labelsHidden()
+                    .padding(EdgeInsets.init(top: 50, leading: 10, bottom: 0, trailing: 10))
 
-        VStack {
+                Text("Alert & Pickers")
+                    .font(Font.system(size: 35, design: .rounded))
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
 
-            Picker(selection: $selectedOption.onChange(changeViewWithThirdWay), label: Text("Choose action")) {
-                ForEach(0 ..< self.options.count) {
-                    Text(self.options[$0]).tag($0)
+                List((0...50),id: \.self) { input in
+                    ZStack {
+                        HStack(spacing: 10) {
+                            Image(systemName: "book")
+                                .font(.title)
+                                .padding(.leading, 10)
+                            VStack(alignment: .leading, spacing: 5, content: {
+                                Text("Simple")
+                                Text("3 different buttons")
+                            })
+                            Spacer()
+                        }.padding(.vertical)
+                            .frame(maxWidth:.infinity)
+                            .background(RoundedRectangle(cornerRadius: 10).foregroundColor(Color.white).shadow(radius: 1.5)
+                            )
+
+                        Button(action: {
+                            self.enableSheet = true
+                        }) {
+                            Text("")
+                        }
+                    }
+                }.padding()
+            }.blur(radius: $enableSheet.wrappedValue ? 1 : 0)
+                .overlay(
+                    $enableSheet.wrappedValue ? Color.black.opacity(0.6) : nil
+                )
+           if $enableSheet.wrappedValue {
+                GeometryReader { gr in
+                    VStack {
+                        VStack {
+                            Text("PickerView")
+                                .font(.headline)
+                                .foregroundColor(.gray)
+                                .padding(.top, 10)
+                            Text("Prefered ContentHeight")
+                                .padding(.top, 5)
+                            Picker("test", selection: self.$slectedObj) {
+                                Text("100").id("100")
+                                Text("201").id("201")
+                                Text("301").id("302")
+                            }.labelsHidden()
+                        }.background(RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.white).shadow(radius: 1))
+                        VStack {
+                            Button(action: {
+                                debugPrint("Done Selected")
+                                self.enableSheet = false
+                            }) {
+                                Text("Done").fontWeight(Font.Weight.bold)
+                            }.padding()
+                                .frame(maxWidth: gr.size.width  - 90)
+                                .background(RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.white).shadow(radius: 1))
+
+                        }
+                    }.position(x: gr.size.width / 2 ,y: gr.size.height - 200)
                 }
-            }.pickerStyle(SegmentedPickerStyle())
-
-            // MARK: first way
-            VStack {
-                if selectedOption == 0 {
-                    Text("add (first way)")
-                } else if selectedOption == 1 {
-                    Text("edit (first way)")
-                } else {
-                    Text("delete (first way)")
-                }
-
-                Divider()
-
-                // MARK: second way
-                ZStack {
-
-                    Text("One")
-                        .opacity(selectedOption == 0 ? 1 : 0)
-
-                    Text("Two")
-                        .opacity(selectedOption == 1 ? 1 : 0)
-
-                    Text("Four")
-                        .opacity(selectedOption == 2 ? 1 : 0)
-                }
-
-                Divider()
-
-                // MARK: showing third way
-                Text("just to show, how to use third way: \(self.choosed)")
-
-                Spacer()
-
             }
-
-        }
-
-    }
-
-    func changeViewWithThirdWay(_ newValue: Int) {
-        print("will change something in third way with: \(choosed), you can do everything in this function")
-        withAnimation {
-            choosed = newValue
-        }
-
-    }
-
-}
-
-// MARK: the third way
-extension Binding {
-    func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
-        return Binding(
-            get: { self.wrappedValue },
-            set: { selection in
-                self.wrappedValue = selection
-                handler(selection)
-        })
-    }
-}
+        }.edgesIgnoringSafeArea(.all)
+      }
+     }
 
 struct DeleteMe_Previews: PreviewProvider {
     static var previews: some View {
