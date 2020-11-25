@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Preferences: View {
     @State var sizeOfCoffeeDim = 0
+    @State var countSugarDim = 3
+    @State var countAdditDim = 7
     //Создавался для Picker но потом я его слегка переделал и это вроде как больше не нужно
 //    var coffeeSizesDim = [
 //        Image("size04"),
@@ -62,8 +64,10 @@ struct Preferences: View {
 //                        coffeeSizesDim[0].tag(0)
 //                        coffeeSizesDim[1].tag(1)
 //                        coffeeSizesDim[2].tag(2)
+                       
                     }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 150)
+                    
                     
                     // На время теста кнопки решил заменить на Picker, может от этого нам станет лучше
 //                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {
@@ -90,24 +94,30 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Сахар: ")
                     Spacer()
-               
+                    Picker(selection: $countSugarDim, label: Text("Количество сахара")) {
+                        Image("sugar05").tag(3)
+                        Image("sugar06").tag(4)
+                        Image("sugar07").tag(5)
+                        Image("sugar08").tag(6)
+                    }.pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 200)
                     // теперь это кнопки
-                    Button(action: {self.sugarCount = 0}, label: {
-                        Image("sugar01")
-                    })
-                    
-                    Button(action: {self.sugarCount = 10 }, label: {
-                        Image("sugar02")
-                    })
-                    
-                    Button(action: {self.sugarCount = 20 }, label: {
-                        Image("sugar03")
-                    })
-                    
-                    
-                    Button(action: {self.sugarCount = 30}, label: {
-                        Image("sugar04")
-                    })
+//                    Button(action: {self.sugarCount = 0}, label: {
+//                        Image("sugar01")
+//                    })
+//
+//                    Button(action: {self.sugarCount = 10 }, label: {
+//                        Image("sugar02")
+//                    })
+//
+//                    Button(action: {self.sugarCount = 20 }, label: {
+//                        Image("sugar03")
+//                    })
+//
+//
+//                    Button(action: {self.sugarCount = 30}, label: {
+//                        Image("sugar04")
+//                    })
                     
                 }
                 .frame(height: 50)
@@ -117,15 +127,19 @@ struct Preferences: View {
                 HStack(alignment: .bottom) {
                     Text("Сливки: ")
                     Spacer()
-                    
+                    Picker(selection: $countAdditDim, label: Text("Количество сливок")) {
+                        Image("addit03").tag(7)
+                        Image("addit04").tag(8)
+                    }.pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 100)
                     // теперь это кнопки
-                    Button(action: {self.addit = 0}, label: {
-                        Image("addit01")
-                    })
-                    
-                    Button(action: {self.addit = 20}, label: {
-                        Image("addit02")
-                    })
+//                    Button(action: {self.addit = 0}, label: {
+//                        Image("addit01")
+//                    })
+//
+//                    Button(action: {self.addit = 20}, label: {
+//                        Image("addit02")
+//                    })
                 }
                 .frame(height: 50)
                 Divider()
