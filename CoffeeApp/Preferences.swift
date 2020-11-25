@@ -9,11 +9,12 @@ import SwiftUI
 
 struct Preferences: View {
     @State var sizeOfCoffeeDim = 0
-    var coffeeSizesDim = [
-        Image.sizeSmall,
-        Image.sizeMedium,
-        Image.sizeLarge
-    ]
+    //Создавался для Picker но потом я его слегка переделал и это вроде как больше не нужно
+//    var coffeeSizesDim = [
+//        Image("size04"),
+//        Image("size05"),
+//        Image("size06")
+//    ]
     var objectCoffee: MenuCoffee
 @State var showAlertMessage = false
     @State var numberOfCoffee = 1
@@ -52,9 +53,12 @@ struct Preferences: View {
                     Spacer()
                     Picker(selection: $sizeOfCoffeeDim, label: Text("Выбор размера")) {
                         //Когда делаю через ForEach, то перестают отображаться картинки, но через него делать более правильно, так как пунктов может быть довольно много и менять в разных местах это не с руки, как и прописывать
-                        ForEach(0 ..< self.coffeeSizesDim.count) {
-                            Text(self.coffeeSizesDim[$0]).tag($0)
-                        }
+//                        ForEach(0 ..< self.coffeeSizesDim.count) {
+//                            Text(self.coffeeSizesDim[$0]).tag($0)
+//                        }
+                        Image("size04").tag(0)
+                        Image("size05").tag(1)
+                          Image("size06").tag(2)
 //                        coffeeSizesDim[0].tag(0)
 //                        coffeeSizesDim[1].tag(1)
 //                        coffeeSizesDim[2].tag(2)
@@ -170,18 +174,6 @@ struct Preferences: View {
 //    var additionsCoffee: String
 //    var totalPrice: String
 //}
-
-extension Image {
-    static var sizeSmall: Image {
-        Image("size04")
-    }
-    static var sizeMedium: Image {
-        Image("size05")
-    }
-    static var sizeLarge: Image {
-        Image("size06")
-    }
-}
 
 
 struct Preferences_Previews: PreviewProvider {
