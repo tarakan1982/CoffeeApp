@@ -51,9 +51,17 @@ struct Preferences: View {
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
-                HStack(alignment: .bottom) {
+                HStack() {
                     Text("Размер: ")
                     Spacer()
+                    VStack(alignment: .trailing) {
+                    if sizeOfCoffeeDim == 0 {
+                        Text("Малый")
+                    } else if sizeOfCoffeeDim == 1 {
+                        Text("Средний")
+                    } else {
+                        Text("Большой")
+                    }
                     Picker(selection: $sizeOfCoffeeDim, label: Text("Выбор размера")) {
                         //Когда делаю через ForEach, то перестают отображаться картинки, но через него делать более правильно, так как пунктов может быть довольно много и менять в разных местах это не с руки, как и прописывать
 //                        ForEach(0 ..< self.coffeeSizesDim.count) {
@@ -68,7 +76,7 @@ struct Preferences: View {
                        
                     }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 150)
-                    
+                    }
                     // На время теста кнопки решил заменить на Picker, может от этого нам станет лучше
 //                    Button(action: {self.sizeCoffee = objectCoffee.price}, label: {
 //                        Image("size01")
@@ -91,9 +99,19 @@ struct Preferences: View {
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
-                HStack(alignment: .bottom) {
+                HStack() {
                     Text("Сахар: ")
                     Spacer()
+                    VStack(alignment: .trailing) {
+                    if countSugarDim == 3 {
+                        Text("Без сахара")
+                    } else if countSugarDim == 4 {
+                        Text("Одна порция")
+                    } else if countSugarDim == 5 {
+                        Text("Две порции")
+                    } else {
+                        Text("Три порции")
+                    }
                     Picker(selection: $countSugarDim, label: Text("Количество сахара")) {
                         Image("sugar05").tag(3)
                         Image("sugar06").tag(4)
@@ -101,6 +119,7 @@ struct Preferences: View {
                         Image("sugar08").tag(6)
                     }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 200)
+                    }
                     // теперь это кнопки
 //                    Button(action: {self.sugarCount = 0}, label: {
 //                        Image("sugar01")
@@ -124,14 +143,21 @@ struct Preferences: View {
                 Divider()
                     .frame(height: 2)
                     .background((Color("fontcolor")))
-                HStack(alignment: .bottom) {
+                HStack() {
                     Text("Сливки: ")
                     Spacer()
+                    VStack(alignment: .trailing) {
+                    if countAdditDim == 7 {
+                        Text("Со сливками")
+                    } else {
+                        Text("Сливки не нужны")
+                    }
                     Picker(selection: $countAdditDim, label: Text("Количество сливок")) {
                         Image("addit03").tag(7)
                         Image("addit04").tag(8)
                     }.pickerStyle(SegmentedPickerStyle())
                     .frame(width: 100)
+                    }
                     // теперь это кнопки
 //                    Button(action: {self.addit = 0}, label: {
 //                        Image("addit01")
