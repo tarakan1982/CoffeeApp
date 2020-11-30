@@ -96,7 +96,7 @@ struct MyDataPage: View {
         }
         .onTapGesture {
                     hideKeyboard()
-                }
+        }
     }
 }
 extension View {
@@ -108,8 +108,6 @@ extension View {
 
 struct MyDataPage_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
             MyDataPage()
-        }
     }
 }
