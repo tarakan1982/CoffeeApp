@@ -94,9 +94,16 @@ struct MyDataPage: View {
             .navigationBarTitle("О себе", displayMode: .inline)
             
         }
+        .onTapGesture {
+                    hideKeyboard()
+                }
     }
 }
-
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 
 
 struct MyDataPage_Previews: PreviewProvider {
