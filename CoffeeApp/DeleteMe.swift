@@ -14,12 +14,16 @@ struct DeleteMe: View {
             Text("\(selection)")
             if selection == 1 {
                 Text("Hello")
+                var scoreDim = selection + 10
+                Text("\(scoreDim)")
             } else {
                 Image(systemName: "cart")
+                var scoreDim = selection + 30
+                Text("\(scoreDim)")
             }
-        Picker(selection: $selection, label: Text("Some Label")) {
+        Picker(selection: $selection, label: Text("Просто счетчик")) {
                     ForEach(0 ..< 5) {
-                        Text("Number \($0)") }
+                        Text("Число \($0)") }
                 }.onChange(of: selection) { _ in
                     print(selection)
                 }
@@ -32,3 +36,4 @@ struct DeleteMe_Previews: PreviewProvider {
         DeleteMe()
     }
 }
+

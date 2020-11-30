@@ -75,6 +75,15 @@ struct Preferences: View {
 //                        coffeeSizesDim[2].tag(2)
                        
                     }.pickerStyle(SegmentedPickerStyle())
+                    .onChange(of: sizeOfCoffeeDim) { _ in
+                        if sizeOfCoffeeDim == 0 {
+                            sizeCoffee = objectCoffee.price
+                        } else if sizeOfCoffeeDim == 1 {
+                            sizeCoffee = objectCoffee.price + 20
+                        } else {
+                            sizeCoffee = objectCoffee.price + 40
+                        }
+                    }
                     .frame(width: 150)
                     }
                     // На время теста кнопки решил заменить на Picker, может от этого нам станет лучше
@@ -118,6 +127,17 @@ struct Preferences: View {
                         Image("sugar07").tag(5)
                         Image("sugar08").tag(6)
                     }.pickerStyle(SegmentedPickerStyle())
+                    .onChange(of: countSugarDim) { _ in
+                        if countSugarDim == 3 {
+                            sugarCount = 0
+                        } else if countSugarDim == 4 {
+                            sugarCount = 10
+                        } else if countSugarDim == 5 {
+                            sugarCount = 20
+                        } else {
+                            sugarCount = 30
+                        }
+                    }
                     .frame(width: 200)
                     }
                     // теперь это кнопки
@@ -153,9 +173,16 @@ struct Preferences: View {
                         Text("Сливки не нужны")
                     }
                     Picker(selection: $countAdditDim, label: Text("Количество сливок")) {
-                        Image("addit03").tag(7)
-                        Image("addit04").tag(8)
+                        Image("addit04").tag(7)
+                        Image("addit03").tag(8)
                     }.pickerStyle(SegmentedPickerStyle())
+                    .onChange(of: countAdditDim) { _ in
+                        if countAdditDim == 7 {
+                            addit = 0
+                        } else {
+                            addit = 36
+                        }
+                    }
                     .frame(width: 100)
                     }
                     // теперь это кнопки
