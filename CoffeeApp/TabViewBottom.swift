@@ -27,6 +27,7 @@ struct TabViewBottom: View {
                     Text("Карта")
                 }.tag(3)
             MyDataPage()
+//                DeleteMe()
                 .tabItem {
                 Image(systemName: "person")
                     Text("Мои данные")

@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct OrdersCart: View {
+    
+    var nameOfCoffeeOrder: String = ""
+    var quantityOrder: Int = 0
+    var sizeOrder: Int = 0
+    var sugarOrder: Int = 0
+    var slivkoOrder: Int = 0
+    var totalPriceOrder: Int = 0
+    
     var body: some View {
-        NavigationView {
-            List() {
-                
-            }
-            .navigationBarTitle("Заказы", displayMode: .inline)
+        VStack {
+            Text("Вы заказали: \(nameOfCoffeeOrder) в количестве: \(quantityOrder) штук")
+            Text("Размер кофе: \(sizeOrder), количество сахара: \(sugarOrder)")
+            Text("Сливки: \(slivkoOrder)")
+            Text("Общая стоимость заказа составляет: \(totalPriceOrder)")
+            
         }
     }
-}
+    }
+
 
 struct OrdersCart_Previews: PreviewProvider {
     static var previews: some View {
