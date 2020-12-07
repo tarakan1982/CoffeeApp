@@ -20,15 +20,15 @@ struct srtuctCoffe {
 }
 
 
-class valueCoffe: ObservableObject {
-    var value = [srtuctCoffe]()
-}
+//class valueCoffe: ObservableObject {
+//    var value = [srtuctCoffe]()
+//}
 
 struct Preferences: View {
     
     var objectCoffee: MenuCoffee
 
-    @ObservedObject var valueCoffePreferences = valueCoffe()
+//    @ObservedObject var valueCoffePreferences = valueCoffe()
     
     @State var sizeOfCoffeeDim = 0
     @State var countSugarDim = 3
@@ -195,7 +195,13 @@ struct Preferences: View {
                 destination: OrdersCart(nameOfCoffeeOrder: objectCoffee.nameCoffee, quantityOrder: numberOfCoffee, sizeOrder: sizeCoffee, sugarOrder: sugarCount, slivkoOrder: addit, totalPriceOrder: totalPrice()),
                 label: {
                     Text("Заказать")
+                        .foregroundColor(.white)
+                                            .frame(width: UIScreen.main.bounds.width - 80)
+                                            .padding()
                 })
+                .background(Color("buttoncolor"))
+                            .cornerRadius(30)
+                            .padding(.top, 16)
 //            Button(action: {
 //                self.showAlertMessage.toggle()
 //            }) {
