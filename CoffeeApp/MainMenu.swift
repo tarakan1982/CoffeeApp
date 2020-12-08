@@ -42,7 +42,7 @@ struct MenuCoffee: Identifiable {
 }
 
 let coffeeData: [MenuCoffee] = [
-    MenuCoffee(image: "espresso", nameCoffee: "Espresso", price: 45  ),
+    MenuCoffee(image: "espresso", nameCoffee: "Espresso", price: 45 ),
     MenuCoffee(image: "cappuccino", nameCoffee: "Cappuccino", price: 34),
     MenuCoffee(image: "macciato", nameCoffee: "Macciato", price: 67),
     MenuCoffee(image: "mocha", nameCoffee: "Mocha", price: 86),

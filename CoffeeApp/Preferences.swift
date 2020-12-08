@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
-import Combine
+//import Combine
 
-
-struct srtuctCoffe {
-    
-    var numberOfCoffee : Int
-    var sizeCoffee : Int
-    var sugarCount : Int
-    var addit  : Int
-    var price : Int
-    
-}
+//
+//struct srtuctCoffe {
+//
+//    var numberOfCoffee : Int
+//    var sizeCoffee : Int
+//    var sugarCount : Int
+//    var addit  : Int
+//    var price : Int
+//
+//}
 
 
 //class valueCoffe: ObservableObject {

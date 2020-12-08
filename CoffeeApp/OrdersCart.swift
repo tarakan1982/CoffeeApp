@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OrdersCart: View {
     
+    @Environment(\.presentationMode) var presentation // добавили для того,чтобы кнопка назад в меню заработала
     var nameOfCoffeeOrder: String = ""
     var quantityOrder: Int = 0
     var sizeOrder: Int = 0
@@ -22,8 +23,11 @@ struct OrdersCart: View {
             Text("Размер кофе: \(sizeOrder), количество сахара: \(sugarOrder)")
             Text("Сливки: \(slivkoOrder)")
             Text("Общая стоимость заказа составляет: \(totalPriceOrder)")
-            
+            Button("Назад в меню") {
+                self.presentation.wrappedValue.dismiss()
+            }
         }
+        .navigationBarBackButtonHidden(true) //Скрыли кнопку назад в меню
     }
     }
 
