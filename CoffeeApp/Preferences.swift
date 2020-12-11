@@ -199,6 +199,7 @@ struct Preferences: View {
                                             .frame(width: UIScreen.main.bounds.width - 80)
                                             .padding()
                 })
+                .navigationBarTitle("\(objectCoffee.nameCoffee)")
                 .background(Color("buttoncolor"))
                             .cornerRadius(30)
                             .padding(.top, 16)

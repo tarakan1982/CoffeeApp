@@ -27,7 +27,7 @@ struct OrdersCart: View {
                 self.presentation.wrappedValue.dismiss()
             }
         }
-        .navigationBarBackButtonHidden(true) //Скрыли кнопку назад в меню
+             .navigationBarBackButtonHidden(true) //Скрыли кнопку назад в меню
     }
     }
 
