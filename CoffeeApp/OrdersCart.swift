@@ -17,16 +17,62 @@ struct OrdersCart: View {
     var slivkoOrder: Int = 0
     var totalPriceOrder: Int = 0
     
-    var body: some View {
+        var body: some View {
         VStack {
-            Text("Вы заказали: \(nameOfCoffeeOrder) в количестве: \(quantityOrder) штук")
-            Text("Размер кофе: \(sizeOrder), количество сахара: \(sugarOrder)")
-            Text("Сливки: \(slivkoOrder)")
-            Text("Общая стоимость заказа составляет: \(totalPriceOrder)")
-            Button("Назад в меню") {
-                self.presentation.wrappedValue.dismiss()
+            ZStack {
+            Image("header")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Image(systemName: "cart")
+                .font(.system(size: 80, weight: .bold, design: .rounded))
+                .foregroundColor((Color("fontcolor")))
+//                .resizable()
+//                .frame(width: 100, height: 100, alignment: .center)
             }
+            VStack {
+            HStack {
+            Text("\(nameOfCoffeeOrder) \(quantityOrder) шт")
+                Spacer()
+                Text("\(totalPriceOrder)")
+            }
+            Divider()
+                .frame(height: 2)
+                .background((Color("fontcolor")))
+            Text("Сумма заказа: \(totalPriceOrder)")
+            Spacer()
+            }
+            .foregroundColor(Color("menufont"))
+            .font(.system(size: 20))
+            .padding(.horizontal)
+            .padding(.top)
+         
+            HStack(spacing: 30) {
+                Button(action: {
+                    self.presentation.wrappedValue.dismiss()
+                }) {
+                    Text("Назад")
+                }
+                .padding(15)
+                .padding(.horizontal, 10)
+                .foregroundColor(Color("buttoncolor"))
+                .cornerRadius(30)
+                .overlay(
+                            RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color("buttoncolor"), lineWidth: 2))
+                Button(action: {
+
+                }) {
+                    Text("Подтвердить")
+                }
+                .padding(15)
+                .padding(.horizontal, 10)
+                .background(Color("buttoncolor"))
+                .foregroundColor(.white)
+                .cornerRadius(30)
+            }
+            .padding(.bottom)
         }
+        
              .navigationBarBackButtonHidden(true) //Скрыли кнопку назад в меню
     }
     }
