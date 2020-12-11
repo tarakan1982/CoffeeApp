@@ -23,11 +23,9 @@ struct OrdersCart: View {
             Image("header")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Image(systemName: "cart")
-                .font(.system(size: 80, weight: .bold, design: .rounded))
-                .foregroundColor((Color("fontcolor")))
-//                .resizable()
-//                .frame(width: 100, height: 100, alignment: .center)
+            Image("odredCoffeePict")
+                .resizable()
+                .frame(width: 100, height: 100, alignment: .center)
             }
             VStack {
             HStack {
