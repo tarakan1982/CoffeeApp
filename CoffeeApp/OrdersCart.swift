@@ -28,10 +28,12 @@ struct OrdersCart: View {
                 .frame(width: 100, height: 100, alignment: .center)
             }
             VStack {
-            HStack {
-            Text("\(nameOfCoffeeOrder) \(quantityOrder) шт")
+            List {
+                HStack {
+            Text("\(nameOfCoffeeOrder) - \(quantityOrder) шт")
                 Spacer()
-                Text("\(totalPriceOrder)")
+                Text("\(totalPriceOrder) p.")
+                }
             }
             Divider()
                 .frame(height: 2)
